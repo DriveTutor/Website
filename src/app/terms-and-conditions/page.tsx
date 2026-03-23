@@ -4,7 +4,7 @@ export const metadata: Metadata = { title: 'Terms & Conditions — Drive Tutor' 
 export default function Terms() {
   return (
     <PolicyLayout badge="📜 Legal Document" title="Terms & Conditions" updated="January 1, 2025"
-      toc={[{id:'tc-1',title:'Acceptance of Terms'},{id:'tc-2',title:'Description of Service'},{id:'tc-3',title:'User Accounts'},{id:'tc-4',title:'Instructor Terms'},{id:'tc-5',title:'Learner Terms'},{id:'tc-6',title:'Payments & Fees'},{id:'tc-7',title:'Prohibited Conduct'},{id:'tc-8',title:'Limitation of Liability'},{id:'tc-9',title:'Governing Law'},{id:'tc-10',title:'Changes to Terms'}]}
+      toc={[{id:'tc-1',label:'Acceptance of Terms'},{id:'tc-2',label:'Description of Service'},{id:'tc-3',label:'User Accounts'},{id:'tc-4',label:'Instructor Terms'},{id:'tc-5',label:'Learner Terms'},{id:'tc-6',label:'Payments & Fees'},{id:'tc-7',label:'Prohibited Conduct'},{id:'tc-8',label:'Limitation of Liability'},{id:'tc-9',label:'Governing Law'},{id:'tc-10',label:'Changes to Terms'}]}
       prevPage={{label:'Privacy Policy',href:'/privacy-policy'}}
       nextPage={{label:'Data Consent',href:'/data-consent-policy'}}>
       <div className="policy-highlight">By downloading, installing, or using Drive Tutor, you agree to be bound by these Terms and Conditions. Please read them carefully.</div>

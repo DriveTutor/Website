@@ -4,7 +4,7 @@ export const metadata: Metadata = { title: 'Account Deletion — Drive Tutor' }
 export default function AccountDeletion() {
   return (
     <PolicyLayout badge="🗑️ Account" title="Account Deletion Policy" updated="January 1, 2025"
-      toc={[{id:'ad-1',title:'How to Delete Your Account'},{id:'ad-2',title:'What Happens After Deletion'},{id:'ad-3',title:'Data Retained After Deletion'},{id:'ad-4',title:'Reactivation'}]}
+      toc={[{id:'ad-1',label:'How to Delete Your Account'},{id:'ad-2',label:'What Happens After Deletion'},{id:'ad-3',label:'Data Retained After Deletion'},{id:'ad-4',label:'Reactivation'}]}
       prevPage={{label:'Safety Policy',href:'/safety-policy'}}>
       <div className="policy-highlight">Account deletion is permanent. Once completed, your data cannot be recovered. Please read this policy carefully before submitting a deletion request.</div>
       <section id="ad-1">

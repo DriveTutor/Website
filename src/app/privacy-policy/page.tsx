@@ -4,7 +4,7 @@ export const metadata: Metadata = { title: 'Privacy Policy — Drive Tutor' }
 export default function PrivacyPolicy() {
   return (
     <PolicyLayout badge="🔐 Legal Document" title="Privacy Policy" updated="January 1, 2025"
-      toc={[{id:'pp-1',title:'Information We Collect'},{id:'pp-2',title:'How We Use Your Information'},{id:'pp-3',title:'Information Sharing & Disclosure'},{id:'pp-4',title:'Data Storage & Security'},{id:'pp-5',title:"Your Rights & Choices"},{id:'pp-6',title:"Children's Privacy"},{id:'pp-7',title:'Changes to This Policy'},{id:'pp-8',title:'Contact Us'}]}
+      toc={[{id:'pp-1',label:'Information We Collect'},{id:'pp-2',label:'How We Use Your Information'},{id:'pp-3',label:'Information Sharing & Disclosure'},{id:'pp-4',label:'Data Storage & Security'},{id:'pp-5',label:"Your Rights & Choices"},{id:'pp-6',label:"Children's Privacy"},{id:'pp-7',label:'Changes to This Policy'},{id:'pp-8',label:'Contact Us'}]}
       nextPage={{label:'Terms & Conditions',href:'/terms-and-conditions'}}>
       <div className="policy-highlight">Drive Tutor Inc. ("Drive Tutor", "we", "us", or "our") is committed to protecting your privacy. This Privacy Policy describes how we collect, use, share, and protect your personal information when you use our mobile application and related services.</div>
       <section id="pp-1"><h2>1. Information We Collect</h2>
