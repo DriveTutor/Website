@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = { title: 'Cookie Policy — Drive Tutor' }
 export default function Page() {
   return (
-    <PolicyLayout badge="🍪 Legal Document" title="Cookie Policy" updated="January 1, 2025" toc={}>
+    <PolicyLayout badge="🍪 Legal Document" title="Cookie Policy" updated="January 1, 2025" toc={[]}>
       <div className="policy-highlight">This policy is effective as of January 1, 2025. For questions, contact us at hello@drivetutor.ca.</div>
       <section>
         <h2>Overview</h2>
