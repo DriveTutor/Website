@@ -132,7 +132,6 @@ export default function Home() {
       <section id="how-it-works" style={{ padding: 'clamp(64px,8vw,96px) clamp(16px,4vw,32px)', background: 'var(--secondary)' }}>
         <div style={{ maxWidth: 1140, margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: 48 }}>
-            <div className="section-tag" style={{ margin: '0 auto 16px' }}><span>How It Works</span></div>
             <h2>How Drive Tutor Works</h2>
             <p style={{ color: 'var(--muted)', fontSize: 15, marginTop: 10, maxWidth: 440, marginLeft: 'auto', marginRight: 'auto' }}>Simple steps to manage your lessons without the hassle</p>
           </div>
@@ -170,7 +169,6 @@ export default function Home() {
       <section id="why-drive-tutor" style={{ padding: 'clamp(64px,8vw,96px) clamp(16px,4vw,32px)', background: 'var(--bg)' }}>
         <div style={{ maxWidth: 1140, margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: 48 }}>
-            <div className="section-tag" style={{ margin: '0 auto 16px' }}><span>Why Drive Tutor</span></div>
             <h2>Why learners and instructors trust Drive Tutor</h2>
             <p style={{ color: 'var(--muted)', fontSize: 15, marginTop: 10, maxWidth: 520, marginLeft: 'auto', marginRight: 'auto' }}>Built around verified instructors, organized lesson management, and a safer learning experience.</p>
           </div>
@@ -231,7 +229,6 @@ export default function Home() {
       <section id="screenshots" style={{ padding: 'clamp(64px,8vw,96px) clamp(16px,4vw,32px)', background: 'var(--secondary)' }}>
         <div className="screenshots-inner">
           <div className="screenshots-head">
-            <div className="section-tag" style={{ margin: '0 auto 16px' }}><span>App Screenshots</span></div>
             <h2>See the app in action</h2>
             <p>Clean, intuitive screens built for learners and instructors alike.</p>
           </div>
