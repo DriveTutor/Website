@@ -166,6 +166,40 @@ export default function Home() {
         </div>
       </section>
 
+      {/* WHY DRIVE TUTOR */}
+      <section id="why-drive-tutor" style={{ padding: 'clamp(64px,8vw,96px) clamp(16px,4vw,32px)', background: 'var(--bg)' }}>
+        <div style={{ maxWidth: 1140, margin: '0 auto' }}>
+          <div style={{ textAlign: 'center', marginBottom: 48 }}>
+            <div className="section-tag" style={{ margin: '0 auto 16px' }}><span>Why Drive Tutor</span></div>
+            <h2>Why learners and instructors trust Drive Tutor</h2>
+            <p style={{ color: 'var(--muted)', fontSize: 15, marginTop: 10, maxWidth: 520, marginLeft: 'auto', marginRight: 'auto' }}>Built around verified instructors, organized lesson management, and a safer learning experience.</p>
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 16, marginBottom: 48 }}>
+            {[
+              { ico: '✅', title: 'Verified Ontario instructors', desc: 'Every instructor on Drive Tutor is reviewed to help learners connect with legitimate, provincially certified professionals.' },
+              { ico: '📋', title: 'Organized lesson tracking', desc: 'Keep lesson notes, progress, and schedules in one place so nothing gets lost between classes.' },
+              { ico: '🛡️', title: 'Built for a safer experience', desc: 'Drive Tutor is designed to reduce confusion, improve visibility, and give learners more confidence in who they are booking with.' },
+            ].map(c => (
+              <div key={c.title} className="feat-card">
+                <div className="feat-icon">{c.ico}</div>
+                <div className="feat-title">{c.title}</div>
+                <div className="feat-desc">{c.desc}</div>
+              </div>
+            ))}
+          </div>
+          <div style={{ textAlign: 'center' }}>
+            <a
+              href="https://forms.gle/KfJgBKYz3DDKvSNE9"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ display: 'inline-flex', alignItems: 'center', padding: '14px 32px', background: '#054ADA', color: '#fff', borderRadius: '10px', fontWeight: 700, fontSize: '15px', textDecoration: 'none', border: '1.5px solid #054ADA', transition: 'all 0.25s' }}
+            >
+              Join Instructor Waitlist
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* ABOUT */}
       <section id="about" style={{ padding: 'clamp(64px,8vw,96px) clamp(16px,4vw,32px)', background: 'var(--bg)' }}>
         <div className="about-inner">
