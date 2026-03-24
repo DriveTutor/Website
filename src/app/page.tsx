@@ -71,22 +71,27 @@ export default function Home() {
           <div>
             <div className="hero-pill">
               <div className="hero-pill-dot" />
-              <span>Now Available in Ontario 🇨🇦</span>
+              <span>Verified Ontario Driving Instructor Platform</span>
             </div>
-            <h1 className="hero-h1">Book Driving Lessons<br /><span style={{ color: 'var(--primary)' }}>with Confidence</span></h1>
-            <p className="hero-sub">Drive Tutor connects learner drivers with verified instructors in Ontario. Simple booking, trusted profiles, and a seamless experience — all in one app.</p>
-            <div className="store-btns">
-              <a href="#" className="store-btn store-btn-dark">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-                <div><div className="store-label-sm">Coming Soon</div><div>App Store</div></div>
-              </a>
-              <a href="#" className="store-btn store-btn-outline">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.26.14.57.15.85.03L14.88 12 3.03.21C2.75.09 2.44.1 2.18.24 1.67.52 1.33 1.06 1.33 1.67v20.66c0 .61.34 1.15.85 1.43z"/><path d="M18.82 9.67L16.08 8.1 12.97 12l3.11 3.9 2.74-1.57c.8-.46 1.27-1.29 1.27-2.23s-.47-1.97-1.27-2.43z"/></svg>
-                <div><div className="store-label-sm">Coming Soon</div><div>Google Play</div></div>
-              </a>
+            <h1 className="hero-h1">Spend less time scheduling.<br /><span style={{ color: 'var(--primary)' }}>More time teaching.</span></h1>
+            <p className="hero-sub">The all-in-one platform for Ontario driving instructors to manage lessons, schedules, and learners without the back-and-forth calls and manual tracking.</p>
+            <p style={{ fontSize: '14px', color: 'var(--muted)', fontWeight: 600, marginBottom: '32px', letterSpacing: '0.01em' }}>Built for verified Ontario instructors. Launching soon.</p>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', marginBottom: '36px' }}>
+              <Link
+                href="/instructor-login"
+                style={{ display: 'inline-flex', alignItems: 'center', padding: '14px 28px', background: '#054ADA', color: '#fff', borderRadius: '10px', fontWeight: 700, fontSize: '15px', textDecoration: 'none', border: '1.5px solid #054ADA', transition: 'all 0.25s', whiteSpace: 'nowrap' }}
+              >
+                Join Instructor Waitlist
+              </Link>
+              <Link
+                href="/instructor-login"
+                style={{ display: 'inline-flex', alignItems: 'center', padding: '14px 20px', background: 'transparent', color: '#054ADA', borderRadius: '10px', fontWeight: 600, fontSize: '14px', textDecoration: 'none', border: '1.5px solid #E5E7EB', transition: 'all 0.25s', whiteSpace: 'nowrap' }}
+              >
+                Are you a learner? Get early access →
+              </Link>
             </div>
             <div className="trust-list">
-              {['Verified, background-checked instructors','Real-time availability & instant booking','Lesson management for learners & instructors','Secure payments and data privacy'].map(t => (
+              {['Save hours on scheduling every week','Manage all learners in one place','Stay organized without paperwork'].map(t => (
                 <div key={t} className="trust-item"><div className="trust-check">✓</div>{t}</div>
               ))}
             </div>
@@ -98,14 +103,13 @@ export default function Home() {
             <div className="phone">
               <div className="phone-notch" />
               <div className="phone-screen">
-                <div className="ps-topbar"><span className="ps-brand">DriveTutor</span><div className="ps-avatar">A</div></div>
-                <div className="ps-greeting">Good morning, Alex 👋</div>
-                <div className="ps-title">Find your next lesson</div>
-                <div className="ps-search"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>Search instructors near you...</div>
+                <div className="ps-topbar"><span className="ps-brand">DriveTutor</span><div className="ps-avatar">J</div></div>
+                <div className="ps-greeting">Good morning, James 👋</div>
+                <div className="ps-title">Today&apos;s Schedule</div>
                 {[
-                  { bg: 'linear-gradient(135deg,#054ADA,#0340B8)', name: 'Sarah M.', meta: '⭐ 4.9 · 248 lessons', badge: 'Verified', bc: 'badge-blue' },
-                  { bg: 'linear-gradient(135deg,#7C3AED,#5B21B6)', name: 'James K.', meta: '⭐ 4.8 · 190 lessons', badge: 'Top Rated', bc: 'badge-yellow' },
-                  { bg: 'linear-gradient(135deg,#16A34A,#15803D)', name: 'Priya S.', meta: '⭐ 5.0 · 312 lessons', badge: 'New', bc: 'badge-green' },
+                  { bg: 'linear-gradient(135deg,#054ADA,#0340B8)', name: 'Emma R.', meta: '9:00 AM · G2 Prep', badge: 'Confirmed', bc: 'badge-blue' },
+                  { bg: 'linear-gradient(135deg,#7C3AED,#5B21B6)', name: 'Liam T.', meta: '11:30 AM · G1 Beginner', badge: 'Confirmed', bc: 'badge-blue' },
+                  { bg: 'linear-gradient(135deg,#16A34A,#15803D)', name: 'Aisha K.', meta: '2:00 PM · Highway', badge: 'Confirmed', bc: 'badge-blue' },
                 ].map(i => (
                   <div key={i.name} className="instr-card">
                     <div className="instr-av" style={{ background: i.bg }} />
@@ -113,24 +117,12 @@ export default function Home() {
                     <div className={`badge ${i.bc}`}>{i.badge}</div>
                   </div>
                 ))}
-                <div className="ps-cta">Book a Lesson →</div>
+                <div className="ps-cta">View Lesson Notes →</div>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      {/* STATS */}
-      <div className="stats-band">
-        <div className="stats-inner">
-          {[['1000','Learners Enrolled','+'],['50','Verified Instructors','+'],['4.9','App Store Rating','★']].map(([n,l,s]) => (
-            <div key={l} className="stat-col">
-              <div className="stat-num">{n}<span>{s}</span></div>
-              <div className="stat-lbl">{l}</div>
-            </div>
-          ))}
-        </div>
-      </div>
 
       {/* ABOUT */}
       <section id="about" style={{ padding: 'clamp(64px,8vw,96px) clamp(16px,4vw,32px)', background: 'var(--bg)' }}>
