@@ -76,9 +76,9 @@ export default function Nav() {
 
         <div className="nav-spacer" />
 
-        <Link href="/instructor-login" className="nav-store-btn nav-btn-primary">
-          🎓 Instructor Login
-        </Link>
+        <a href="https://forms.gle/KfJgBKYz3DDKvSNE9" target="_blank" rel="noopener noreferrer" className="nav-store-btn nav-btn-primary">
+          Join Waitlist
+        </a>
 
         <button className="theme-toggle" onClick={toggleTheme} title={dark ? 'Switch to light mode' : 'Switch to dark mode'}>
           {dark ? '☀️' : '🌙'}
@@ -109,10 +109,10 @@ export default function Nav() {
         <div className="mobile-divider" />
         <Link href="/contact" className="mobile-nav-link" onClick={closeMobile}>💬 Contact</Link>
         <div className="mobile-divider" />
-        <Link href="/instructor-login" className="mobile-nav-link" onClick={closeMobile}
+        <a href="https://forms.gle/KfJgBKYz3DDKvSNE9" target="_blank" rel="noopener noreferrer" className="mobile-nav-link"
           style={{ color: 'var(--primary)', fontWeight: 700 }}>
-          🎓 Instructor Login
-        </Link>
+          Join Waitlist
+        </a>
       </div>
     </>
   )
