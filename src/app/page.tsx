@@ -77,18 +77,22 @@ export default function Home() {
             <p className="hero-sub">The all-in-one platform for Ontario driving instructors to manage lessons, schedules, and learners without the back-and-forth calls and manual tracking.</p>
             <p style={{ fontSize: '14px', color: 'var(--muted)', fontWeight: 600, marginBottom: '32px', letterSpacing: '0.01em' }}>Built for verified Ontario instructors. Launching soon.</p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', marginBottom: '36px' }}>
-              <Link
-                href="/instructor-login"
+              <a
+                href="https://forms.gle/KfJgBKYz3DDKvSNE9"
+                target="_blank"
+                rel="noopener noreferrer"
                 style={{ display: 'inline-flex', alignItems: 'center', padding: '14px 28px', background: '#054ADA', color: '#fff', borderRadius: '10px', fontWeight: 700, fontSize: '15px', textDecoration: 'none', border: '1.5px solid #054ADA', transition: 'all 0.25s', whiteSpace: 'nowrap' }}
               >
                 Join Instructor Waitlist
-              </Link>
-              <Link
-                href="/instructor-login"
+              </a>
+              <a
+                href="https://forms.gle/KfJgBKYz3DDKvSNE9"
+                target="_blank"
+                rel="noopener noreferrer"
                 style={{ display: 'inline-flex', alignItems: 'center', padding: '14px 20px', background: 'transparent', color: '#054ADA', borderRadius: '10px', fontWeight: 600, fontSize: '14px', textDecoration: 'none', border: '1.5px solid #E5E7EB', transition: 'all 0.25s', whiteSpace: 'nowrap' }}
               >
                 Are you a learner? Get early access →
-              </Link>
+              </a>
             </div>
             <div className="trust-list">
               {['Save hours on scheduling every week','Manage all learners in one place','Stay organized without paperwork'].map(t => (
