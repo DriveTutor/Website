@@ -128,6 +128,44 @@ export default function Home() {
         </div>
       </section>
 
+      {/* HOW IT WORKS */}
+      <section id="how-it-works" style={{ padding: 'clamp(64px,8vw,96px) clamp(16px,4vw,32px)', background: 'var(--secondary)' }}>
+        <div style={{ maxWidth: 1140, margin: '0 auto' }}>
+          <div style={{ textAlign: 'center', marginBottom: 48 }}>
+            <div className="section-tag" style={{ margin: '0 auto 16px' }}><span>How It Works</span></div>
+            <h2>How Drive Tutor Works</h2>
+            <p style={{ color: 'var(--muted)', fontSize: 15, marginTop: 10, maxWidth: 440, marginLeft: 'auto', marginRight: 'auto' }}>Simple steps to manage your lessons without the hassle</p>
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 16, marginBottom: 48 }}>
+            {[
+              { step: '1', ico: '🎯', title: 'Get matched with learners', desc: 'Learners request lessons based on your location and availability.' },
+              { step: '2', ico: '📅', title: 'Accept and schedule', desc: 'Approve learners and schedule lessons using your built-in planner.' },
+              { step: '3', ico: '📋', title: 'Manage everything in one place', desc: 'Track lesson notes, progress, and schedules without manual work.' },
+              { step: '4', ico: '📊', title: 'Stay organized and in control', desc: 'View your daily, weekly, and monthly schedule at a glance.' },
+            ].map(s => (
+              <div key={s.step} className="feat-card">
+                <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 16 }}>
+                  <div style={{ width: 26, height: 26, borderRadius: '50%', background: '#054ADA', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 12, fontWeight: 800, flexShrink: 0 }}>{s.step}</div>
+                  <div className="feat-icon" style={{ margin: 0 }}>{s.ico}</div>
+                </div>
+                <div className="feat-title">{s.title}</div>
+                <div className="feat-desc">{s.desc}</div>
+              </div>
+            ))}
+          </div>
+          <div style={{ textAlign: 'center' }}>
+            <a
+              href="https://forms.gle/KfJgBKYz3DDKvSNE9"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ display: 'inline-flex', alignItems: 'center', padding: '14px 32px', background: '#054ADA', color: '#fff', borderRadius: '10px', fontWeight: 700, fontSize: '15px', textDecoration: 'none', border: '1.5px solid #054ADA', transition: 'all 0.25s' }}
+            >
+              Join Instructor Waitlist
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* ABOUT */}
       <section id="about" style={{ padding: 'clamp(64px,8vw,96px) clamp(16px,4vw,32px)', background: 'var(--bg)' }}>
         <div className="about-inner">
