@@ -239,20 +239,6 @@ export default function Home() {
             ))}
           </div>
 
-          {/* Store badges */}
-          <div style={{ display: 'flex', justifyContent: 'center', gap: '24px', marginTop: '48px', flexWrap: 'wrap' }}>
-            {[
-              { src: '/store-badges/appstore.png', alt: 'App Store' },
-              { src: '/store-badges/playstore.png', alt: 'Google Play' },
-            ].map(badge => (
-              <div key={badge.alt} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8 }}>
-                <div style={{ padding: '10px 16px', border: '1.5px solid var(--border)', borderRadius: '12px', opacity: 0.85, background: 'var(--bg)' }}>
-                  <img src={badge.src} alt={badge.alt} style={{ height: 36, display: 'block', objectFit: 'contain' }} />
-                </div>
-                <span style={{ fontSize: 12, color: 'var(--muted)', fontWeight: 500 }}>Coming Soon</span>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -310,6 +296,20 @@ export default function Home() {
               </a>
             </div>
             <p className="dl-note">Free to download · iOS &amp; Android · Ontario, Canada</p>
+          </div>
+          {/* Store badges */}
+          <div style={{ display: 'flex', justifyContent: 'center', gap: '24px', marginTop: '32px', flexWrap: 'wrap' }}>
+            {[
+              { src: '/store-badges/appstore.png', alt: 'Download on the App Store' },
+              { src: '/store-badges/playstore.png', alt: 'Get it on Google Play' },
+            ].map(badge => (
+              <div key={badge.alt} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8 }}>
+                <div style={{ padding: '10px 18px', border: '1.5px solid var(--border)', borderRadius: '12px', opacity: 0.85, background: 'rgba(255,255,255,0.08)' }}>
+                  <img src={badge.src} alt={badge.alt} width={140} height={42} style={{ display: 'block', objectFit: 'contain' }} />
+                </div>
+                <span style={{ fontSize: 12, color: 'var(--muted)', fontWeight: 500 }}>Coming Soon</span>
+              </div>
+            ))}
           </div>
         </div>
       </section>
