@@ -266,8 +266,7 @@ export default function Home() {
       <section id="download" style={{ padding: 'clamp(64px,8vw,96px) clamp(16px,4vw,32px)', background: 'var(--secondary)' }}>
         <div className="download-inner">
           <div className="dl-card">
-            <div className="dl-card-glow" />
-            <div className="dl-card-accent" />
+
             <div className="dl-tag"><span>Get the App</span></div>
             <h2>Start your driving journey today</h2>
             <p>Download Drive Tutor on iOS or Android and book your first lesson in minutes.</p>

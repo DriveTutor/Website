@@ -246,9 +246,9 @@ h3 { font-size: 18px; font-weight: 700; color: var(--fg); letter-spacing: -0.02e
 /* ── DOWNLOAD ── */
 .download { padding: 96px 24px; background: var(--secondary); }
 .download-inner { max-width: 700px; margin: 0 auto; text-align: center; }
-.dl-card { background: var(--surface-dark); border-radius: var(--r-xl); padding: 64px 40px; position: relative; overflow: hidden; }
-.dl-card-glow { position: absolute; top: -80px; left: 50%; transform: translateX(-50%); width: 400px; height: 400px; background: radial-gradient(circle, rgba(5,74,218,0.35), transparent); pointer-events: none; }
-.dl-card-accent { position: absolute; bottom: -30px; right: -30px; width: 180px; height: 180px; border-radius: 50%; background: var(--accent); opacity: 0.07; filter: blur(2px); }
+.dl-card { background: linear-gradient(160deg, #0c1a3a 0%, #0a1228 100%); border-radius: var(--r-xl); padding: 64px 40px; position: relative; overflow: hidden; }
+.dl-card-glow { display: none; }
+.dl-card-accent { display: none; }
 .dl-card h2 { color: var(--surface-dark-text); margin-bottom: 12px; }
 .dl-card p { color: var(--surface-dark-muted); font-size: 16px; line-height: 1.7; max-width: 420px; margin: 0 auto 40px; }
 .dl-btns { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-bottom: 24px; }
