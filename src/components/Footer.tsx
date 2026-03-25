@@ -3,8 +3,8 @@ import Link from 'next/link'
 
 const legalLinks = [
   { label: 'Privacy Policy', href: '/privacy-policy' },
-  { label: 'Terms & Conditions', href: '/terms' },
-  { label: 'Data Consent Policy', href: '/data-consent' },
+  { label: 'Terms & Conditions', href: '/terms-and-conditions' },
+  { label: 'Data Consent Policy', href: '/data-consent-policy' },
   { label: 'Refund Policy', href: '/refund-policy' },
   { label: 'Cookie Policy', href: '/cookie-policy' },
   { label: 'Account Deletion', href: '/account-deletion' },
@@ -29,7 +29,8 @@ export default function Footer() {
               <img src="/logo.jpeg" alt="Drive Tutor" style={{width:30,height:30,borderRadius:7,objectFit:'cover',flexShrink:0}} />
               <span className="footer-logo-text">Drive<span>Tutor</span></span>
             </div>
-            <p className="footer-desc">Drive Tutor is a mobile-first platform that connects people learning to drive with licensed instructors across Ontario. Built specifically for Ontario, Drive Tutor is designed around the G1 → G2 → G licensing journey — helping learners stay organized and instructors stay in control.</p>
+            <p className="footer-desc">Drive Tutor is a mobile-first platform that connects people learning to drive with licensed instructors across Ontario.</p>
+            <p className="footer-desc" style={{ marginTop: 0 }}>Built around the G1 → G2 → G journey — helping learners stay organized and instructors stay in control.</p>
             <div className="footer-emails">
               <a href="mailto:info@drivetutor.ca">info@drivetutor.ca</a>
             </div>
@@ -72,7 +73,7 @@ export default function Footer() {
                   <img src={badge.src} alt={badge.alt} style={{maxWidth:'100%',maxHeight:'100%',objectFit:'contain',display:'block'}} />
                 </div>
                 <div>
-                  <div style={{fontSize:9,opacity:.5,lineHeight:1,marginBottom:2}}>Coming Soon</div>
+                  <div style={{fontSize:10,opacity:.5,lineHeight:1,marginBottom:2}}>Coming Soon</div>
                   <div>{badge.alt}</div>
                 </div>
               </div>
@@ -83,7 +84,7 @@ export default function Footer() {
         </div>
         <div className="footer-divider" />
         <div className="footer-bottom">
-          <p>© 2025 Drive Tutor Inc. All rights reserved. · Ontario, Canada</p>
+          <p>© 2026 Drive Tutor Inc. All rights reserved. · Ontario, Canada</p>
           <p>Built with ❤️ for Ontario drivers</p>
         </div>
       </div>
