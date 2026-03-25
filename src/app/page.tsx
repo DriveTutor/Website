@@ -5,7 +5,7 @@ import Navbar from '@/components/Nav'
 import Footer from '@/components/Footer'
 
 const features = [
-  { ico: '📅', title: 'Easy Booking', desc: 'Browse instructor availability and book lessons in minutes. No calls, no waiting.' },
+  { ico: '📅', title: 'Easy Booking', desc: 'Send lesson requests and get scheduled based on your availability, no back-and-forth calls.' },
   { ico: '🛡️', title: 'Verified Instructors', desc: 'Every instructor is verified before they can accept bookings. Safety first, always.' },
   { ico: '🗓️', title: 'Lesson Management', desc: 'Upcoming lessons, history, and rescheduling — all tracked automatically.' },
   { ico: '🔒', title: 'Secure & Private', desc: 'Your data is protected. Personal information is handled with care.' },
