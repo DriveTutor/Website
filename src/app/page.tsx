@@ -200,9 +200,9 @@ export default function Home() {
             <div className="section-tag"><span>About Drive Tutor</span></div>
             <h2>Ontario&apos;s driving lesson platform</h2>
             <div className="about-text">
-              <p>Drive Tutor is a mobile-first platform that makes it effortless for driving learners to find, book, and learn from professional instructors across Ontario.</p>
-              <p>Whether you&apos;re a new driver working toward your G1, or a seasoned instructor looking to manage your bookings more efficiently — Drive Tutor brings both sides together in one trusted app.</p>
-              <p>We are proudly based in Ontario and designed specifically for the Ontario driving licence process — from G1 to G2 to G.</p>
+              <p>Drive Tutor is a mobile-first platform that connects people learning to drive with licensed instructors across Ontario.</p>
+              <p>Whether you&apos;re preparing for your G1, G2, or G, or you&apos;re an instructor looking to manage bookings more efficiently, Drive Tutor brings both sides together in one trusted app.</p>
+              <p>Built specifically for Ontario, Drive Tutor is designed around the G1 → G2 → G licensing journey — helping learners stay organized and instructors stay in control.</p>
             </div>
           </div>
           <div className="about-cards">
