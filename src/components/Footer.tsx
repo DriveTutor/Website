@@ -26,7 +26,7 @@ export default function Footer() {
         <div className="footer-grid">
           <div>
             <div style={{display:'flex',alignItems:'center',gap:10}}>
-              <div className="logo-icon">DT</div>
+              <img src="/logo.jpeg" alt="Drive Tutor" style={{width:30,height:30,borderRadius:7,objectFit:'cover',flexShrink:0}} />
               <span className="footer-logo-text">Drive<span>Tutor</span></span>
             </div>
             <p className="footer-desc">Drive Tutor is a mobile-first platform that connects people learning to drive with licensed instructors across Ontario. Built specifically for Ontario, Drive Tutor is designed around the G1 → G2 → G licensing journey — helping learners stay organized and instructors stay in control.</p>
