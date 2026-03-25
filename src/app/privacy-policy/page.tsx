@@ -27,11 +27,11 @@ export default function PrivacyPolicy() {
       <section id="pp-5"><h2>5. Your Rights & Choices</h2>
         <p>Under PIPEDA and applicable Ontario privacy law, you have the right to:</p>
         <ul><li>Access the personal information we hold about you</li><li>Request correction of inaccurate information</li><li>Request deletion of your personal information</li><li>Withdraw consent to data processing at any time</li><li>Lodge a complaint with the Office of the Privacy Commissioner of Canada</li></ul>
-        <p>To exercise any of these rights, contact us at <a href="mailto:privacy@drivetutor.ca">privacy@drivetutor.ca</a>.</p>
+        <p>To exercise any of these rights, contact us at <a href="mailto:info@drivetutor.ca">info@drivetutor.ca</a>.</p>
       </section>
       <section id="pp-6"><h2>6. Children&apos;s Privacy</h2><p>Drive Tutor is not directed at individuals under the age of 16. We do not knowingly collect personal information from children under 16. If you believe we have inadvertently collected such information, please contact us immediately.</p></section>
       <section id="pp-7"><h2>7. Changes to This Policy</h2><p>We may update this Privacy Policy from time to time. We will notify you of material changes via email or in-app notification. Your continued use of Drive Tutor after changes take effect constitutes your acceptance of the revised policy.</p></section>
-      <section id="pp-8"><h2>8. Contact Us</h2><p>Questions about this Privacy Policy? Contact us at <a href="mailto:privacy@drivetutor.ca">privacy@drivetutor.ca</a> or <a href="mailto:hello@drivetutor.ca">hello@drivetutor.ca</a>.</p></section>
+      <section id="pp-8"><h2>8. Contact Us</h2><p>Questions about this Privacy Policy? Contact us at <a href="mailto:info@drivetutor.ca">info@drivetutor.ca</a> or <a href="mailto:info@drivetutor.ca">info@drivetutor.ca</a>.</p></section>
     </PolicyLayout>
   )
 }

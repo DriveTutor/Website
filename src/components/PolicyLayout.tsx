@@ -45,8 +45,7 @@ export default function PolicyLayout({ badge, title, updated, toc, children, pre
           <div className="policy-body">{children}</div>
           <div className="policy-contact-box">
             <h3>Questions about this policy?</h3>
-            <p>Email us at <a href="mailto:hello@drivetutor.ca">hello@drivetutor.ca</a></p>
-            <p>For privacy matters: <a href="mailto:privacy@drivetutor.ca">privacy@drivetutor.ca</a></p>
+            <p>Email us at <a href="mailto:info@drivetutor.ca">info@drivetutor.ca</a></p>
           </div>
           <div className="policy-nav-row">
             {prevPage ? <Link href={prevPage.href} className="policy-nav-btn">← {prevPage.label}</Link> : <span />}

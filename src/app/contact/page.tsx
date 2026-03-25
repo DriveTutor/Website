@@ -5,10 +5,10 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = { title: 'Contact & Support — Drive Tutor' }
 
 const contacts = [
-  { ico: '📧', title: 'General Enquiries', desc: 'For general questions about Drive Tutor, partnerships, or media enquiries.', email: 'hello@drivetutor.ca' },
-  { ico: '🛠️', title: 'Technical Support', desc: 'Having issues with the app? Our support team is ready to help learners and instructors.', email: 'support@drivetutor.ca' },
-  { ico: '🔐', title: 'Privacy & Data Requests', desc: 'For data access requests, account deletion, or privacy-related concerns under PIPEDA.', email: 'privacy@drivetutor.ca' },
-  { ico: '🦺', title: 'Safety & Incidents', desc: 'To report a safety incident, concern, or community guideline violation.', email: 'safety@drivetutor.ca' },
+  { ico: '📧', title: 'General Enquiries', desc: 'For general questions about Drive Tutor, partnerships, or media enquiries.', email: 'info@drivetutor.ca' },
+  { ico: '🛠️', title: 'Technical Support', desc: 'Having issues with the app? Our support team is ready to help learners and instructors.', email: 'info@drivetutor.ca' },
+  { ico: '🔐', title: 'Privacy & Data Requests', desc: 'For data access requests, account deletion, or privacy-related concerns under PIPEDA.', email: 'info@drivetutor.ca' },
+  { ico: '🦺', title: 'Safety & Incidents', desc: 'To report a safety incident, concern, or community guideline violation.', email: 'info@drivetutor.ca' },
 ]
 
 export default function Contact() {

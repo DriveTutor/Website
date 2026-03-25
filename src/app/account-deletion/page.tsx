@@ -13,7 +13,7 @@ export default function AccountDeletion() {
         <div style={{marginTop:16}}>
           {[
             {n:1,t:'In-App Request',d:'Go to Settings → Account → Delete Account within the Drive Tutor app.'},
-            {n:2,t:'Email Request',d:'Send an email to support@drivetutor.ca with the subject line "Account Deletion Request" and your registered email address.'},
+            {n:2,t:'Email Request',d:'Send an email to info@drivetutor.ca with the subject line "Account Deletion Request" and your registered email address.'},
             {n:3,t:'Confirmation',d:'We will confirm your request within 2 business days and begin the deletion process.'},
           ].map(s=>(
             <div key={s.n} style={{display:'flex',gap:20,padding:'22px',background:'var(--secondary)',borderRadius:'var(--r)',marginBottom:4}}>
