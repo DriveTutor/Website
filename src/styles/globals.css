@@ -139,6 +139,7 @@ nav { position: fixed; top: 3px; left: 0; right: 0; z-index: 150; background: va
 /* ── SECTION BASE ── */
 section { position: relative; }
 .section-inner { max-width: 1200px; margin: 0 auto; }
+.page-container { max-width: 1200px; margin: 0 auto; width: 100%; }
 .section-tag { display: inline-flex; align-items: center; gap: 6px; padding: 5px 14px; background: var(--primary-light); border: 1px solid rgba(5,74,218,0.2); border-radius: var(--r-full); margin-bottom: 16px; }
 .section-tag span { color: var(--primary); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; }
 h1 { font-size: clamp(32px, 5.5vw, 64px); font-weight: 900; line-height: 1.04; letter-spacing: -0.04em; color: var(--fg); }

@@ -56,7 +56,7 @@ export default function Home() {
       <Navbar />
 
       {/* HERO */}
-      <section id="hero" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', padding: 'clamp(88px,10vw,120px) clamp(16px,4vw,32px) 80px', position: 'relative', overflow: 'hidden', background: 'var(--bg)' }}>
+      <section id="hero" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', padding: 'clamp(88px,10vw,120px) clamp(16px,2.5vw,24px) 80px', position: 'relative', overflow: 'hidden', background: 'var(--bg)' }}>
         <div className="hero-bg">
           <div className="hero-blob hero-blob1" />
           <div className="hero-blob hero-blob2" />
@@ -124,8 +124,8 @@ export default function Home() {
       </section>
 
       {/* HOW IT WORKS */}
-      <section id="how-it-works" style={{ padding: 'clamp(64px,8vw,96px) clamp(16px,4vw,32px)', background: 'var(--secondary)' }}>
-        <div style={{ maxWidth: 1200, margin: '0 auto' }}>
+      <section id="how-it-works" style={{ padding: 'clamp(64px,8vw,96px) clamp(16px,2.5vw,24px)', background: 'var(--secondary)' }}>
+        <div className="page-container">
           <div style={{ textAlign: 'center', marginBottom: 48 }}>
             <h2>How Drive Tutor Works</h2>
             <p style={{ color: 'var(--muted)', fontSize: 15, marginTop: 10, maxWidth: 440, marginLeft: 'auto', marginRight: 'auto' }}>Simple steps to manage your lessons without the hassle</p>
@@ -161,8 +161,8 @@ export default function Home() {
       </section>
 
       {/* WHY DRIVE TUTOR */}
-      <section id="why-drive-tutor" style={{ padding: 'clamp(64px,8vw,96px) clamp(16px,4vw,32px)', background: 'var(--bg)' }}>
-        <div style={{ maxWidth: 1200, margin: '0 auto' }}>
+      <section id="why-drive-tutor" style={{ padding: 'clamp(64px,8vw,96px) clamp(16px,2.5vw,24px)', background: 'var(--bg)' }}>
+        <div className="page-container">
           <div style={{ textAlign: 'center', marginBottom: 48 }}>
             <h2>Why learners and instructors trust Drive Tutor</h2>
             <p style={{ color: 'var(--muted)', fontSize: 15, marginTop: 10, maxWidth: 520, marginLeft: 'auto', marginRight: 'auto' }}>Built around verified instructors, organized lesson management, and a safer learning experience.</p>
@@ -194,7 +194,7 @@ export default function Home() {
       </section>
 
       {/* ABOUT */}
-      <section id="about" style={{ padding: 'clamp(64px,8vw,96px) clamp(16px,4vw,32px)', background: 'var(--bg)' }}>
+      <section id="about" style={{ padding: 'clamp(64px,8vw,96px) clamp(16px,2.5vw,24px)', background: 'var(--bg)' }}>
         <div className="about-inner">
           <div>
             <div className="section-tag"><span>About Drive Tutor</span></div>
@@ -221,7 +221,7 @@ export default function Home() {
       </section>
 
       {/* SCREENSHOTS */}
-      <section id="screenshots" style={{ padding: 'clamp(64px,8vw,96px) clamp(16px,4vw,32px)', background: 'var(--secondary)' }}>
+      <section id="screenshots" style={{ padding: 'clamp(64px,8vw,96px) clamp(16px,2.5vw,24px)', background: 'var(--secondary)' }}>
         <div className="screenshots-inner">
           <div className="screenshots-head">
             <h2>See the app in action</h2>
@@ -243,7 +243,7 @@ export default function Home() {
       </section>
 
       {/* FEATURES */}
-      <section id="features" style={{ padding: 'clamp(64px,8vw,96px) clamp(16px,4vw,32px)', background: 'var(--bg)' }}>
+      <section id="features" style={{ padding: 'clamp(64px,8vw,96px) clamp(16px,2.5vw,24px)', background: 'var(--bg)' }}>
         <div className="features-inner">
           <div className="features-head">
             <div className="section-tag" style={{ margin: '0 auto 16px' }}><span>Features</span></div>
@@ -263,7 +263,7 @@ export default function Home() {
       </section>
 
       {/* DOWNLOAD */}
-      <section id="download" style={{ padding: 'clamp(64px,8vw,96px) clamp(16px,4vw,32px)', background: 'var(--secondary)' }}>
+      <section id="download" style={{ padding: 'clamp(64px,8vw,96px) clamp(16px,2.5vw,24px)', background: 'var(--secondary)' }}>
         <div className="download-inner">
           <div className="dl-card">
 
@@ -296,7 +296,7 @@ export default function Home() {
       </section>
 
       {/* LEGAL */}
-      <section id="legal" style={{ padding: 'clamp(64px,8vw,96px) clamp(16px,4vw,32px)', background: 'var(--bg)' }}>
+      <section id="legal" style={{ padding: 'clamp(64px,8vw,96px) clamp(16px,2.5vw,24px)', background: 'var(--bg)' }}>
         <div className="legal-inner">
           <div className="legal-head">
             <div className="section-tag" style={{ margin: '0 auto 16px' }}><span>Legal & Compliance</span></div>
