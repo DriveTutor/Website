@@ -273,43 +273,15 @@ export default function Home() {
             <p>Download Drive Tutor on iOS or Android and book your first lesson in minutes.</p>
             <div className="dl-btns">
               <a href="#" className="dl-btn dl-btn-white">
-                {/* App Store icon: blue rounded square with white A */}
-                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="32" height="32" rx="8" fill="#0D84FF"/>
-                  <path d="M16 7l2.47 5.01 5.53.8-4 3.9.94 5.49L16 19.51l-4.94 2.59.94-5.49-4-3.9 5.53-.8L16 7z" fill="none"/>
-                  <path d="M20.5 21h-9a.5.5 0 010-1h.94l3.06-7.5 3.06 7.5H19.5a.5.5 0 010 1zm-7.13-1h5.26L16 13.36 13.37 20z" fill="white"/>
-                  <path d="M12 21a.5.5 0 01-.46-.69l4-9.5a.5.5 0 01.92 0l4 9.5A.5.5 0 0120 21h-8zm4-8.73L13.13 20h5.74L16 12.27z" fill="white"/>
-                  <path d="M18.5 18.5h-5a.5.5 0 010-1h5a.5.5 0 010 1z" fill="white"/>
-                </svg>
+                <img src="/store-badges/appstore.png" alt="App Store" height={32} style={{ display: 'block', objectFit: 'contain', width: 'auto' }} />
                 <div><div className="store-label-sm">Coming Soon</div></div>
               </a>
               <a href="#" className="dl-btn dl-btn-border">
-                {/* Google Play icon: multi-color triangle */}
-                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="32" height="32" rx="8" fill="#F8F8F8"/>
-                  <path d="M8 7.5l10 8.5-10 8.5V7.5z" fill="#EA4335"/>
-                  <path d="M8 7.5l10 8.5 4-3.4-11-6.3c-.9-.5-2-.4-3 1.2z" fill="#4285F4"/>
-                  <path d="M8 24.5l10-8.5 4 3.4-11 6.3c-.9.5-2 .4-3-1.2z" fill="#34A853"/>
-                  <path d="M18 16l4.5-3.9c.7.4 1.2 1.1 1.2 2s-.5 1.5-1.2 1.9L18 16z" fill="#FBBC05"/>
-                </svg>
+                <img src="/store-badges/playstore.png" alt="Google Play" height={32} style={{ display: 'block', objectFit: 'contain', width: 'auto' }} />
                 <div><div className="store-label-sm">Coming Soon</div></div>
               </a>
             </div>
             <p className="dl-note">Free to download · iOS &amp; Android · Ontario, Canada</p>
-          </div>
-          {/* Store badges */}
-          <div style={{ display: 'flex', justifyContent: 'center', gap: '24px', marginTop: '32px', flexWrap: 'wrap' }}>
-            {[
-              { src: '/store-badges/appstore.png', alt: 'Download on the App Store' },
-              { src: '/store-badges/playstore.png', alt: 'Get it on Google Play' },
-            ].map(badge => (
-              <div key={badge.alt} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8 }}>
-                <div style={{ padding: '10px 18px', border: '1.5px solid var(--border)', borderRadius: '12px', opacity: 0.85, background: 'rgba(255,255,255,0.08)' }}>
-                  <img src={badge.src} alt={badge.alt} width={140} height={42} style={{ display: 'block', objectFit: 'contain' }} />
-                </div>
-                <span style={{ fontSize: 12, color: 'var(--muted)', fontWeight: 500 }}>Coming Soon</span>
-              </div>
-            ))}
           </div>
         </div>
       </section>
