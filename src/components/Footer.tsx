@@ -34,7 +34,15 @@ export default function Footer() {
               <a href="mailto:info@drivetutor.ca">info@drivetutor.ca</a>
             </div>
             <div className="socials">
-              {['ig','𝕏','fb','in'].map(s => <span key={s} className="social-btn">{s}</span>)}
+              {[
+                { src: '/store-badges/instagram.png', alt: 'Instagram' },
+                { src: '/store-badges/facebook.png',  alt: 'Facebook'  },
+                { src: '/store-badges/x.png',         alt: 'X'         },
+              ].map(s => (
+                <span key={s.alt} className="social-btn" style={{display:'flex',alignItems:'center',justifyContent:'center'}}>
+                  <img src={s.src} alt={s.alt} style={{width:16,height:16,objectFit:'contain',display:'block'}} />
+                </span>
+              ))}
             </div>
           </div>
           <div>
