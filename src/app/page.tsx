@@ -273,14 +273,18 @@ export default function Home() {
             <p>Download Drive Tutor on iOS or Android and book your first lesson in minutes.</p>
             <div className="dl-btns">
               <a href="#" className="dl-btn dl-btn-white">
-                <img src="/store-badges/appstore.png" alt="App Store" height={32} style={{ display: 'block', objectFit: 'contain', width: 'auto', flexShrink: 0 }} />
+                <div style={{ width: 40, height: 40, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                  <img src="/store-badges/appstore.png" alt="App Store" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain', display: 'block' }} />
+                </div>
                 <div style={{ textAlign: 'center' }}>
                   <div className="store-label-sm">Coming Soon</div>
                   <div style={{ fontWeight: 700, fontSize: 15, lineHeight: 1.2, marginTop: 2 }}>App Store</div>
                 </div>
               </a>
               <a href="#" className="dl-btn dl-btn-border">
-                <img src="/store-badges/playstore.png" alt="Google Play" height={32} style={{ display: 'block', objectFit: 'contain', width: 'auto', flexShrink: 0 }} />
+                <div style={{ width: 40, height: 40, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                  <img src="/store-badges/playstore.png" alt="Google Play" style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain', display: 'block' }} />
+                </div>
                 <div style={{ textAlign: 'center' }}>
                   <div className="store-label-sm">Coming Soon</div>
                   <div style={{ fontWeight: 700, fontSize: 15, lineHeight: 1.2, marginTop: 2 }}>Google Play</div>
