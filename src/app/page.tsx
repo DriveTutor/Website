@@ -7,18 +7,13 @@ import Footer from '@/components/Footer'
 const features = [
   { ico: '📅', title: 'Easy Booking', desc: 'Browse instructor availability and book lessons in minutes. No calls, no waiting.' },
   { ico: '🛡️', title: 'Verified Instructors', desc: 'Every instructor is verified before they can accept bookings. Safety first, always.' },
-  { ico: '📱', title: 'App-Based Access', desc: 'Manage everything from your phone. Lessons, payments, messages — all in one place.' },
   { ico: '🗓️', title: 'Lesson Management', desc: 'Upcoming lessons, history, and rescheduling — all tracked automatically.' },
-  { ico: '💬', title: 'Direct Messaging', desc: 'Stay in touch with your instructor through in-app messaging.' },
-  { ico: '🔒', title: 'Secure & Private', desc: 'Your data is protected. Payments and personal info are handled securely.' },
+  { ico: '🔒', title: 'Secure & Private', desc: 'Your data is protected. Personal information is handled with care.' },
 ]
 const screenshots = [
-  { bg: 'linear-gradient(145deg,#EFF6FF,#DBEAFE)', ico: '🔍', lbl: 'Instructor Search' },
-  { bg: 'linear-gradient(145deg,#F0FDF4,#DCFCE7)', ico: '📅', lbl: 'Booking Flow' },
-  { bg: 'linear-gradient(145deg,#FFF7ED,#FED7AA)', ico: '👤', lbl: 'Instructor Profile' },
-  { bg: 'linear-gradient(145deg,#F5F3FF,#EDE9FE)', ico: '📋', lbl: 'Upcoming Lessons' },
-  { bg: 'linear-gradient(145deg,#ECFDF5,#A7F3D0)', ico: '📊', lbl: 'Dashboard' },
-  { bg: 'linear-gradient(145deg,#FFF1F2,#FFE4E6)', ico: '📤', lbl: 'Doc Upload' },
+  { bg: 'linear-gradient(145deg,#EFF6FF,#DBEAFE)', src: '', alt: 'Instructor Dashboard' },
+  { bg: 'linear-gradient(145deg,#F0FDF4,#DCFCE7)', src: '', alt: 'Schedule View' },
+  { bg: 'linear-gradient(145deg,#FFF7ED,#FED7AA)', src: '', alt: 'Learner Management' },
 ]
 const legalCards = [
   { ico: '🔐', title: 'Privacy Policy', desc: 'How we collect, use, and protect your personal data.', href: '/privacy-policy' },
@@ -130,7 +125,7 @@ export default function Home() {
 
       {/* HOW IT WORKS */}
       <section id="how-it-works" style={{ padding: 'clamp(64px,8vw,96px) clamp(16px,4vw,32px)', background: 'var(--secondary)' }}>
-        <div style={{ maxWidth: 1140, margin: '0 auto' }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: 48 }}>
             <h2>How Drive Tutor Works</h2>
             <p style={{ color: 'var(--muted)', fontSize: 15, marginTop: 10, maxWidth: 440, marginLeft: 'auto', marginRight: 'auto' }}>Simple steps to manage your lessons without the hassle</p>
@@ -167,7 +162,7 @@ export default function Home() {
 
       {/* WHY DRIVE TUTOR */}
       <section id="why-drive-tutor" style={{ padding: 'clamp(64px,8vw,96px) clamp(16px,4vw,32px)', background: 'var(--bg)' }}>
-        <div style={{ maxWidth: 1140, margin: '0 auto' }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: 48 }}>
             <h2>Why learners and instructors trust Drive Tutor</h2>
             <p style={{ color: 'var(--muted)', fontSize: 15, marginTop: 10, maxWidth: 520, marginLeft: 'auto', marginRight: 'auto' }}>Built around verified instructors, organized lesson management, and a safer learning experience.</p>
@@ -232,19 +227,17 @@ export default function Home() {
             <h2>See the app in action</h2>
             <p>Clean, intuitive screens built for learners and instructors alike.</p>
           </div>
-          <div className="screens-row">
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 240px))', gap: '32px', justifyContent: 'center', margin: '0 auto' }}>
             {screenshots.map(s => (
-              <div key={s.lbl} className="screen-item">
-                <div className="screen-frame" style={{ background: s.bg }}>
-                  <div className="screen-notch" />
-                  <div className="screen-emoji">{s.ico}</div>
-                  <div className="screen-label-top">{s.lbl}</div>
+              <div key={s.alt} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 14 }}>
+                <div style={{ width: '100%', aspectRatio: '9/19.5', borderRadius: '38px', border: '2px solid var(--border)', background: s.bg, overflow: 'hidden', boxShadow: '0 8px 40px rgba(0,0,0,0.09)', position: 'relative', transition: 'transform 0.3s, box-shadow 0.3s' }}>
+                  <div style={{ position: 'absolute', top: 13, left: '50%', transform: 'translateX(-50%)', width: 58, height: 6, background: 'rgba(17,24,39,0.11)', borderRadius: 3 }} />
+                  {s.src && <img src={s.src} alt={s.alt} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />}
                 </div>
-                <div className="screen-lbl">{s.lbl}</div>
+                <span style={{ fontSize: 13, color: 'var(--muted)', fontWeight: 500 }}>{s.alt}</span>
               </div>
             ))}
           </div>
-          <p style={{ textAlign: 'center', color: 'var(--border)', fontSize: 12, marginTop: 20, fontStyle: 'italic' }}>Placeholder frames — replace with real app screenshots</p>
         </div>
       </section>
 
