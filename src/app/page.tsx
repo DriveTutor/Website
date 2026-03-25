@@ -274,11 +274,17 @@ export default function Home() {
             <div className="dl-btns">
               <a href="#" className="dl-btn dl-btn-white">
                 <img src="/store-badges/appstore.png" alt="App Store" height={32} style={{ display: 'block', objectFit: 'contain', width: 'auto' }} />
-                <div><div className="store-label-sm">Coming Soon</div></div>
+                <div>
+                  <div className="store-label-sm">Coming Soon</div>
+                  <div style={{ fontWeight: 700, fontSize: 15, lineHeight: 1.2 }}>App Store</div>
+                </div>
               </a>
               <a href="#" className="dl-btn dl-btn-border">
                 <img src="/store-badges/playstore.png" alt="Google Play" height={32} style={{ display: 'block', objectFit: 'contain', width: 'auto' }} />
-                <div><div className="store-label-sm">Coming Soon</div></div>
+                <div>
+                  <div className="store-label-sm">Coming Soon</div>
+                  <div style={{ fontWeight: 700, fontSize: 15, lineHeight: 1.2 }}>Google Play</div>
+                </div>
               </a>
             </div>
             <p className="dl-note">Free to download · iOS &amp; Android · Ontario, Canada</p>
