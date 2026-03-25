@@ -253,13 +253,13 @@ h3 { font-size: 18px; font-weight: 700; color: var(--fg); letter-spacing: -0.02e
 /* ── DOWNLOAD ── */
 .download { padding: 96px 24px; background: var(--secondary); }
 .download-inner { max-width: 700px; margin: 0 auto; text-align: center; }
-.dl-card { background: linear-gradient(160deg, #0c1a3a 0%, #0a1228 100%); border-radius: var(--r-xl); padding: 64px 40px; position: relative; overflow: hidden; }
+.dl-card { background: linear-gradient(160deg, #0c1a3a 0%, #0a1228 100%); border-radius: var(--r-xl); padding: clamp(40px,6vw,64px) clamp(28px,5vw,48px); position: relative; overflow: hidden; }
 .dl-card-glow { display: none; }
 .dl-card-accent { display: none; }
-.dl-card h2 { color: var(--surface-dark-text); margin-bottom: 12px; }
+.dl-card h2 { color: var(--surface-dark-text); margin-bottom: 16px; }
 .dl-card p { color: var(--surface-dark-muted); font-size: 16px; line-height: 1.7; max-width: 420px; margin: 0 auto 32px; }
-.dl-btns { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-bottom: 24px; }
-.dl-btn { display: inline-flex; align-items: center; gap: 12px; padding: 14px 24px; border-radius: var(--r); font-weight: 700; font-size: 14px; transition: all 0.25s; cursor: pointer; border: none; text-decoration: none; font-family: inherit; }
+.dl-btns { display: flex; justify-content: center; flex-wrap: wrap; gap: 16px; margin-bottom: 20px; }
+.dl-btn { display: inline-flex; align-items: center; gap: 12px; padding: 14px 24px; border-radius: var(--r); font-weight: 700; font-size: 14px; min-width: 160px; transition: all 0.25s; cursor: pointer; border: none; text-decoration: none; font-family: inherit; }
 .dl-btn-white { background: #fff; color: #111827; }
 .dl-btn-white:hover { background: #f0f4ff; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
 .dl-btn-border { background: rgba(255,255,255,0.08); border: 1.5px solid rgba(255,255,255,0.2); color: #fff; }
@@ -396,10 +396,10 @@ footer { background: var(--surface-dark); padding: 64px 24px 32px; }
   .features-grid { grid-template-columns: 1fr; }
   .feat-card { padding: 22px; }
   .footer-grid { grid-template-columns: 1fr; gap: 32px; }
-  .dl-card { padding: 40px 24px; }
+  .dl-card { border-radius: var(--r-lg); }
   .dl-card p { font-size: 15px; }
-  .dl-btns { flex-direction: column; align-items: center; }
-  .dl-btn { width: 100%; max-width: 280px; justify-content: center; }
+  .dl-btns { flex-direction: column; align-items: center; gap: 12px; }
+  .dl-btn { width: 100%; max-width: 260px; justify-content: center; min-width: unset; }
   .page-nav { display: none; }
   .policy-page { padding: 88px 16px 64px; }
   .policy-toc { padding: 18px 20px; }
