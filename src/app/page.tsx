@@ -70,8 +70,8 @@ export default function Home() {
             </div>
             <h1 className="hero-h1">Spend less time scheduling.<br /><span style={{ color: 'var(--primary)' }}>More time teaching.</span></h1>
             <p className="hero-sub">The all-in-one platform for Ontario driving instructors to manage lessons, schedules, and learners without the back-and-forth calls and manual tracking.</p>
-            <p style={{ fontSize: '14px', color: 'var(--muted)', fontWeight: 600, marginBottom: '32px', letterSpacing: '0.01em' }}>Built for verified Ontario instructors. Launching soon.</p>
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', marginBottom: '36px' }}>
+            <p style={{ fontSize: '14px', color: 'var(--muted)', fontWeight: 600, marginBottom: '28px', letterSpacing: '0.01em' }}>Built for verified Ontario instructors. Launching soon.</p>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', marginBottom: '28px' }}>
               <a
                 href="https://forms.gle/KfJgBKYz3DDKvSNE9"
                 target="_blank"
