@@ -125,11 +125,11 @@ export default function Home() {
       {/* HOW IT WORKS */}
       <section id="how-it-works" style={{ padding: 'clamp(64px,8vw,96px) clamp(16px,2.5vw,24px)', background: 'var(--secondary)' }}>
         <div className="page-container">
-          <div style={{ textAlign: 'center', marginBottom: 48 }}>
+          <div style={{ textAlign: 'center', marginBottom: 56 }}>
             <h2>How Drive Tutor Works</h2>
-            <p style={{ color: 'var(--muted)', fontSize: 15, marginTop: 10, maxWidth: 440, marginLeft: 'auto', marginRight: 'auto' }}>Simple steps to manage your lessons without the hassle</p>
+            <p style={{ color: 'var(--muted)', fontSize: 16, marginTop: 10, maxWidth: 480, marginLeft: 'auto', marginRight: 'auto' }}>Simple steps to manage your lessons without the hassle</p>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 16, marginBottom: 48 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 20, marginBottom: 48 }}>
             {[
               { step: '1', ico: '🎯', title: 'Get matched with learners', desc: 'Learners request lessons based on your location and availability.' },
               { step: '2', ico: '📅', title: 'Accept and schedule', desc: 'Approve learners and schedule lessons using your built-in planner.' },
@@ -157,11 +157,11 @@ export default function Home() {
       {/* WHY DRIVE TUTOR */}
       <section id="why-drive-tutor" style={{ padding: 'clamp(64px,8vw,96px) clamp(16px,2.5vw,24px)', background: 'var(--bg)' }}>
         <div className="page-container">
-          <div style={{ textAlign: 'center', marginBottom: 48 }}>
+          <div style={{ textAlign: 'center', marginBottom: 56 }}>
             <h2>Why learners and instructors trust Drive Tutor</h2>
-            <p style={{ color: 'var(--muted)', fontSize: 15, marginTop: 10, maxWidth: 520, marginLeft: 'auto', marginRight: 'auto' }}>Built around verified instructors, organized lesson management, and a safer learning experience.</p>
+            <p style={{ color: 'var(--muted)', fontSize: 16, marginTop: 10, maxWidth: 520, marginLeft: 'auto', marginRight: 'auto' }}>Built around verified instructors, organized lesson management, and a safer learning experience.</p>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 16, marginBottom: 48 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 20, marginBottom: 48 }}>
             {[
               { ico: '✅', title: 'Verified Ontario instructors', desc: 'Every instructor on Drive Tutor is reviewed to help learners connect with legitimate, provincially certified professionals.' },
               { ico: '📋', title: 'Organized lesson tracking', desc: 'Keep lesson notes, progress, and schedules in one place so nothing gets lost between classes.' },
