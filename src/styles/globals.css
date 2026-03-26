@@ -300,7 +300,7 @@ footer { background: var(--surface-dark); padding: 64px 24px 32px; }
 .social-btn { width: 32px; height: 32px; border-radius: var(--r-sm); background: rgba(255,255,255,0.06); border: 1px solid var(--surface-dark-border); display: flex; align-items: center; justify-content: center; color: var(--surface-dark-muted); cursor: pointer; transition: all 0.2s; font-size: 11px; font-weight: 700; }
 .social-btn:hover { background: rgba(255,255,255,0.12); color: var(--surface-dark-text); }
 .footer-logo-text { font-weight: 800; font-size: 17px; color: var(--surface-dark-text); letter-spacing: -0.5px; }
-.footer-logo-text span { color: var(--accent); }
+.footer-logo-text span { color: var(--surface-dark-text); }
 .footer-store-btn { display: flex; align-items: center; gap: 9px; padding: 10px 14px; border-radius: var(--r-sm); background: rgba(255,255,255,0.06); border: 1px solid var(--surface-dark-border); color: var(--surface-dark-muted); text-decoration: none; transition: all 0.2s; font-size: 12px; font-weight: 600; }
 .footer-store-btn:hover { background: rgba(255,255,255,0.11); color: var(--surface-dark-text); }
 
