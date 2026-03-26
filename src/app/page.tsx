@@ -139,7 +139,7 @@ export default function Home() {
             ].map(({ step, Icon, title, desc }) => (
               <div key={step} className="feat-card">
                 <div className="hiw-icon-wrap">
-                  <Icon size={19} strokeWidth={1.75} />
+                  <Icon size={22} strokeWidth={1.6} />
                 </div>
                 <div className="hiw-step-label">Step {step}</div>
                 <div className="feat-title">{title}</div>
