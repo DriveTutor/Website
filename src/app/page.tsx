@@ -108,10 +108,10 @@ export default function Home() {
           </p>
 
           <div className="hero-pill-btns hero-animate" style={{ animationDelay: '0.4s' }}>
-            <a href="https://forms.gle/KfJgBKYz3DDKvSNE9" target="_blank" rel="noopener noreferrer" className="hero-pill-btn hero-pill-btn-primary">
+            <a href="https://forms.gle/Epqx5GWfyZfqb4hd8" target="_blank" rel="noopener noreferrer" className="hero-pill-btn hero-pill-btn-primary">
               I&apos;m a Learner
             </a>
-            <a href="https://forms.gle/KfJgBKYz3DDKvSNE9" target="_blank" rel="noopener noreferrer" className="hero-pill-btn hero-pill-btn-secondary">
+            <a href="https://forms.gle/n4wiAfmQCPSeADfm6" target="_blank" rel="noopener noreferrer" className="hero-pill-btn hero-pill-btn-secondary">
               I&apos;m an Instructor
             </a>
           </div>
