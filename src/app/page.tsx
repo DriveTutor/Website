@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import Navbar from '@/components/Nav'
 import Footer from '@/components/Footer'
+import { UserCheck, Calendar, LayoutDashboard, BarChart3 } from 'lucide-react'
 
 type TileItem = { color: string; delay: number; duration: number }
 const TILE_COLORS = [
@@ -131,15 +132,18 @@ export default function Home() {
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 20, marginBottom: 48 }}>
             {[
-              { step: '1', title: 'Get matched with learners', desc: 'Learners request lessons based on your location and availability.' },
-              { step: '2', title: 'Accept and schedule', desc: 'Approve learners and schedule lessons using your built-in planner.' },
-              { step: '3', title: 'Manage everything in one place', desc: 'Track lesson notes, progress, and schedules without manual work.' },
-              { step: '4', title: 'Stay organized and in control', desc: 'View your daily, weekly, and monthly schedule at a glance.' },
-            ].map(s => (
-              <div key={s.step} className="feat-card">
-                <div className="hiw-step-label">Step {s.step}</div>
-                <div className="feat-title">{s.title}</div>
-                <div className="feat-desc">{s.desc}</div>
+              { step: '1', Icon: UserCheck,       title: 'Get matched with learners',       desc: 'Learners request lessons based on your location and availability.' },
+              { step: '2', Icon: Calendar,         title: 'Accept and schedule',             desc: 'Approve learners and schedule lessons using your built-in planner.' },
+              { step: '3', Icon: LayoutDashboard,  title: 'Manage everything in one place',  desc: 'Track lesson notes, progress, and schedules without manual work.' },
+              { step: '4', Icon: BarChart3,         title: 'Stay organized and in control',   desc: 'View your daily, weekly, and monthly schedule at a glance.' },
+            ].map(({ step, Icon, title, desc }) => (
+              <div key={step} className="feat-card">
+                <div className="hiw-icon-wrap">
+                  <Icon size={19} strokeWidth={1.75} />
+                </div>
+                <div className="hiw-step-label">Step {step}</div>
+                <div className="feat-title">{title}</div>
+                <div className="feat-desc">{desc}</div>
               </div>
             ))}
           </div>
