@@ -215,6 +215,7 @@ h3 { font-size: 18px; font-weight: 700; color: var(--fg); letter-spacing: -0.02e
 /* ── ABOUT ── */
 .about { padding: 96px 24px; background: var(--bg); }
 .about-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+.about-tag-row { grid-column: 1 / -1; display: flex; justify-content: center; }
 .about-text p { font-size: 15px; color: var(--muted); line-height: 1.8; margin-bottom: 14px; }
 .about-cards { display: flex; flex-direction: column; gap: 14px; }
 .about-card { display: flex; gap: 16px; padding: 22px 24px; background: #ffffff; border-radius: var(--r-lg); border: 1px solid rgba(0,0,0,0.07); box-shadow: 0 1px 3px rgba(0,0,0,0.05), 0 4px 16px rgba(0,0,0,0.04); transition: all 0.22s; cursor: default; }

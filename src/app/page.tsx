@@ -185,8 +185,10 @@ export default function Home() {
       {/* ABOUT */}
       <section id="about" style={{ padding: 'clamp(64px,8vw,96px) clamp(16px,2.5vw,24px)', background: 'var(--bg)' }}>
         <div className="about-inner">
-          <div>
+          <div className="about-tag-row">
             <div className="section-tag"><span>About Drive Tutor</span></div>
+          </div>
+          <div>
             <h2>Ontario&apos;s driving lesson platform</h2>
             <div className="about-text">
               <p>Drive Tutor is a mobile-first platform that connects people learning to drive with licensed instructors across Ontario.</p>
