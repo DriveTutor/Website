@@ -20,7 +20,6 @@ const scrollTo = (id: string) => {
 }
 
 export default function Nav() {
-  const [dark, setDark] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
 
@@ -32,17 +31,7 @@ export default function Nav() {
   const pathname = usePathname()
   const isHome = pathname === '/'
 
-  useEffect(() => {
-    setDark(document.documentElement.classList.contains('dark'))
-  }, [])
-
   useEffect(() => { setMobileOpen(false) }, [pathname])
-
-  const toggleTheme = () => {
-    const isDark = document.documentElement.classList.toggle('dark')
-    setDark(isDark)
-    try { localStorage.setItem('dt-theme', isDark ? 'dark' : 'light') } catch {}
-  }
 
   const closeMobile = () => setMobileOpen(false)
 
@@ -86,10 +75,6 @@ export default function Nav() {
         <a href="https://forms.gle/KfJgBKYz3DDKvSNE9" target="_blank" rel="noopener noreferrer" className="nav-store-btn nav-btn-primary">
           Join Waitlist
         </a>
-
-        <button className="theme-toggle" onClick={toggleTheme} title={dark ? 'Switch to light mode' : 'Switch to dark mode'}>
-          {dark ? '☀️' : '🌙'}
-        </button>
 
         <button className="hamburger" onClick={() => setMobileOpen(o => !o)} aria-label="Menu">
           <span /><span /><span />

@@ -40,38 +40,7 @@ html { scroll-behavior: smooth; }
   --r-full: 9999px;
 }
 
-:root.dark {
-  --bg: #0F172A;
-  --fg: #F1F5F9;
-  --primary: #60A5FA;
-  --primary-light: rgba(96,165,250,0.13);
-  --secondary: #1E293B;
-  --muted: #94A3B8;
-  --accent: #FFD700;
-  --accent-dark: #FBBF24;
-  --card: #1E293B;
-  --border: #334155;
-  --danger: #F87171;
-  --success: #4ADE80;
-  --nav-bg: rgba(15,23,42,0.97);
-  --dropdown-bg: #1E293B;
-  --phone-bg: #1E293B;
-  --phone-screen-bg: #0F172A;
-  --instr-card-bg: #263348;
-  --shot-frame-bg: #1E293B;
-  --policy-hl-bg: rgba(96,165,250,0.12);
-  --policy-hl-color: #93C5FD;
-  --warn-bg: rgba(248,113,113,0.1);
-  --warn-border: rgba(248,113,113,0.3);
-  --warn-color: #FCA5A5;
-  --surface-dark: #080D1A;
-  --surface-dark-text: #F1F5F9;
-  --surface-dark-muted: rgba(241,245,249,0.45);
-  --surface-dark-dim: rgba(241,245,249,0.22);
-  --surface-dark-border: rgba(241,245,249,0.08);
-}
 
-* { transition: background-color 0.2s, border-color 0.2s, color 0.15s; }
 .feat-card, .about-card, .legal-card, .store-btn, .dl-btn, .screen-frame { transition: all 0.25s; }
 
 body {
@@ -110,8 +79,6 @@ nav { position: fixed; top: 3px; left: 0; right: 0; z-index: 150; background: va
 .nav-btn-primary:hover { background: #0340B8; box-shadow: 0 4px 12px rgba(5,74,218,0.3); }
 .nav-btn-outline { background: transparent; color: var(--fg); border: 1.5px solid var(--border); }
 .nav-btn-outline:hover { border-color: var(--primary); color: var(--primary); }
-.theme-toggle { width: 36px; height: 36px; border-radius: var(--r-sm); border: 1.5px solid var(--border); background: transparent; color: var(--muted); cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 17px; flex-shrink: 0; transition: all 0.2s !important; }
-.theme-toggle:hover { background: var(--secondary); border-color: var(--primary); color: var(--primary); }
 .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; border-radius: var(--r-sm); border: 1.5px solid var(--border); background: transparent; }
 .hamburger span { width: 20px; height: 2px; background: var(--fg); border-radius: 1px; transition: all 0.2s; display: block; }
 .mobile-menu { display: none; position: fixed; top: 67px; left: 0; right: 0; background: var(--bg); border-bottom: 1px solid var(--border); padding: 12px 20px; z-index: 140; flex-direction: column; gap: 2px; box-shadow: 0 8px 24px rgba(0,0,0,0.15); max-height: calc(100vh - 67px); overflow-y: auto; }
