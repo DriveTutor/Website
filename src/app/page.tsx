@@ -255,9 +255,11 @@ export default function Home() {
       {/* DOWNLOAD */}
       <section id="download" style={{ padding: 'clamp(64px,8vw,96px) clamp(16px,2.5vw,24px)', background: 'var(--secondary)' }}>
         <div className="download-inner">
+          <div style={{ textAlign: 'center', marginBottom: '28px' }}>
+            <div className="section-tag" style={{ display: 'inline-flex' }}><span>Get the App</span></div>
+          </div>
           <div className="dl-card">
 
-            <div className="dl-tag"><span>Get the App</span></div>
             <h2>Start your driving journey today</h2>
             <p>Download Drive Tutor on iOS or Android and book your first lesson in minutes.</p>
             <div className="dl-btns">
