@@ -99,8 +99,10 @@ export default function Home() {
         {/* Content */}
         <div className="hero-content-new">
           <h1 className="hero-headline-new hero-animate" style={{ animationDelay: '0.1s' }}>
-            Stay focused on driving.<br />
-            <em className="hero-serif">We&apos;ll handle the rest.</em>
+            <span style={{ display: 'inline-block', textAlign: 'left' }}>
+              Stay focused on driving.<br />
+              <em className="hero-serif">We&apos;ll handle the rest.</em>
+            </span>
           </h1>
 
           <p className="hero-subtext-new hero-animate" style={{ animationDelay: '0.25s' }}>
