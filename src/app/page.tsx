@@ -98,36 +98,27 @@ export default function Home() {
 
         {/* Content */}
         <div className="hero-content-new">
-          <div className="hero-eyebrow-new hero-animate" style={{ animationDelay: '0.1s' }}>
-            <span className="hero-pill-dot-new" />
-            Verified Ontario Driving Instructor Platform
-          </div>
-
-          <h1 className="hero-headline-new hero-animate" style={{ animationDelay: '0.25s' }}>
+          <h1 className="hero-headline-new hero-animate" style={{ animationDelay: '0.1s' }}>
             Stay focused on driving.<br />
             <em className="hero-serif">We&apos;ll handle the rest.</em>
           </h1>
 
-          <p className="hero-subtext-new hero-animate" style={{ animationDelay: '0.4s' }}>
+          <p className="hero-subtext-new hero-animate" style={{ animationDelay: '0.25s' }}>
             Book lessons, manage schedules, and learn with confidence through a platform built for Ontario drivers.
           </p>
 
-          <p className="hero-support-new hero-animate" style={{ animationDelay: '0.52s' }}>
-            Built for verified Ontario instructors and learners across Ontario.
-          </p>
-
-          <div className="hero-split hero-animate" style={{ animationDelay: '0.68s' }}>
-            <a href="https://forms.gle/KfJgBKYz3DDKvSNE9" target="_blank" rel="noopener noreferrer" className="hero-split-card">
-              <div className="hero-split-title">I&apos;m a Learner</div>
-              <div className="hero-split-desc">Find instructors and book lessons</div>
-              <div className="hero-split-arrow">Get started →</div>
+          <div className="hero-pill-btns hero-animate" style={{ animationDelay: '0.4s' }}>
+            <a href="https://forms.gle/KfJgBKYz3DDKvSNE9" target="_blank" rel="noopener noreferrer" className="hero-pill-btn hero-pill-btn-primary">
+              I&apos;m a Learner
             </a>
-            <a href="https://forms.gle/KfJgBKYz3DDKvSNE9" target="_blank" rel="noopener noreferrer" className="hero-split-card hero-split-card-primary">
-              <div className="hero-split-title">I&apos;m an Instructor</div>
-              <div className="hero-split-desc">Get students and manage your schedule</div>
-              <div className="hero-split-arrow">Join waitlist →</div>
+            <a href="https://forms.gle/KfJgBKYz3DDKvSNE9" target="_blank" rel="noopener noreferrer" className="hero-pill-btn hero-pill-btn-secondary">
+              I&apos;m an Instructor
             </a>
           </div>
+
+          <p className="hero-trust-line hero-animate" style={{ animationDelay: '0.52s' }}>
+            Ontario&apos;s driving lesson platform
+          </p>
         </div>
       </section>
 

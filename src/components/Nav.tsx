@@ -22,6 +22,13 @@ const scrollTo = (id: string) => {
 export default function Nav() {
   const [dark, setDark] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const handler = () => setScrolled(window.scrollY > 20)
+    window.addEventListener('scroll', handler, { passive: true })
+    return () => window.removeEventListener('scroll', handler)
+  }, [])
   const pathname = usePathname()
   const isHome = pathname === '/'
 
@@ -42,10 +49,10 @@ export default function Nav() {
   return (
     <>
       <div className="accent-bar" />
-      <nav>
+      <nav className={scrolled ? 'nav-scrolled' : undefined}>
         <Link href="/" className="nav-logo" onClick={closeMobile}>
           <img src="/logo.jpeg" alt="DriveTutor" style={{ width: 36, height: 36, borderRadius: 8, objectFit: 'cover' }} />
-<span style={{ fontWeight: 800, fontSize: 17, color: '#ffffff', letterSpacing: -0.5, fontFamily: 'Inter, sans-serif' }}>DriveTutor</span>
+<span style={{ fontWeight: 800, fontSize: 17, color: 'var(--nav-text)', letterSpacing: -0.5, fontFamily: 'Inter, sans-serif' }}>DriveTutor</span>
         </Link>
 
         <div className="nav-links">
