@@ -1,8 +1,19 @@
 'use client'
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import Navbar from '@/components/Nav'
 import Footer from '@/components/Footer'
+
+type TileItem = { color: string; delay: number; duration: number }
+const TILE_COLORS = [
+  'rgba(5,74,218,0.18)',
+  'rgba(79,70,229,0.14)',
+  'rgba(99,102,241,0.11)',
+  'rgba(139,92,246,0.09)',
+  'rgba(59,130,246,0.16)',
+  'rgba(96,165,250,0.12)',
+  'rgba(167,139,250,0.10)',
+]
 
 const features = [
   { ico: '📅', title: 'Easy Booking', desc: 'Send lesson requests and get scheduled based on your availability, no back-and-forth calls.' },
@@ -45,6 +56,15 @@ export default function Home() {
     return () => window.removeEventListener('scroll', handler)
   }, [])
 
+  const [tiles, setTiles] = useState<TileItem[]>([])
+  useEffect(() => {
+    setTiles(Array.from({ length: 220 }, () => ({
+      color: TILE_COLORS[Math.floor(Math.random() * TILE_COLORS.length)],
+      delay: +(Math.random() * 5).toFixed(2),
+      duration: +(2.5 + Math.random() * 3).toFixed(2),
+    })))
+  }, [])
+
   const scrollTo = (id: string, btn: HTMLButtonElement) => {
     document.querySelector(id)?.scrollIntoView({ behavior: 'smooth' })
     document.querySelectorAll('.pn-btn').forEach(b => b.classList.remove('active'))
@@ -56,59 +76,57 @@ export default function Home() {
       <Navbar />
 
       {/* HERO */}
-      <section id="hero" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', padding: 'clamp(88px,10vw,120px) clamp(16px,2.5vw,24px) 80px', position: 'relative', overflow: 'hidden', background: 'var(--bg)' }}>
-        <div className="hero-bg">
-          <div className="hero-blob hero-blob1" />
-          <div className="hero-blob hero-blob2" />
-          <div className="hero-grid" />
+      <section id="hero" style={{ minHeight: '100vh', position: 'relative', overflow: 'hidden', background: '#ffffff' }}>
+        {/* Animated tile grid */}
+        <div className="hero-tile-grid">
+          {tiles.map((t, i) => (
+            <div
+              key={i}
+              className="hero-tile"
+              style={{ background: t.color, animationDuration: `${t.duration}s`, animationDelay: `${t.delay}s` }}
+            />
+          ))}
         </div>
-        <div className="hero-inner">
-          <div>
-            <div className="hero-pill">
-              <div className="hero-pill-dot" />
-              <span>Verified Ontario Driving Instructor Platform</span>
-            </div>
-            <h1 className="hero-h1">Spend less time scheduling.<br /><span style={{ color: 'var(--primary)' }}>More time teaching.</span></h1>
-            <p className="hero-sub">The all-in-one platform for Ontario driving instructors to manage lessons, schedules, and learners without the back-and-forth calls and manual tracking.</p>
-            <p style={{ fontSize: '14px', color: 'var(--muted)', fontWeight: 600, marginBottom: '28px', letterSpacing: '0.01em' }}>Built for verified Ontario instructors. Launching soon.</p>
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', marginBottom: '28px' }}>
-              <a href="https://forms.gle/KfJgBKYz3DDKvSNE9" target="_blank" rel="noopener noreferrer" className="btn-primary">
-                Join Instructor Waitlist
-              </a>
-              <a href="https://forms.gle/KfJgBKYz3DDKvSNE9" target="_blank" rel="noopener noreferrer" className="btn-secondary">
-                Are you a learner? Get early access →
-              </a>
-            </div>
-            <div className="trust-list">
-              {['Save hours on scheduling every week','Manage all learners in one place','Stay organized without paperwork'].map(t => (
-                <div key={t} className="trust-item"><div className="trust-check">✓</div>{t}</div>
-              ))}
-            </div>
+
+        {/* Background video */}
+        <div className="hero-video-wrap">
+          <video autoPlay loop muted playsInline className="hero-video">
+            <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260302_085640_276ea93b-d7da-4418-a09b-2aa5b490e838.mp4" type="video/mp4" />
+          </video>
+          <div className="hero-overlay" />
+        </div>
+
+        {/* Content */}
+        <div className="hero-content-new">
+          <div className="hero-eyebrow-new hero-animate" style={{ animationDelay: '0.1s' }}>
+            <span className="hero-pill-dot-new" />
+            Verified Ontario Driving Instructor Platform
           </div>
-          <div className="phone-wrap">
-            <div className="phone-glow" />
-            <div className="phone-accent-dot" />
-            <div className="phone-accent-dot2" />
-            <div className="phone">
-              <div className="phone-notch" />
-              <div className="phone-screen">
-                <div className="ps-topbar"><span className="ps-brand">DriveTutor</span><div className="ps-avatar">J</div></div>
-                <div className="ps-greeting">Good morning, James 👋</div>
-                <div className="ps-title">Today&apos;s Schedule</div>
-                {[
-                  { bg: 'linear-gradient(135deg,#054ADA,#0340B8)', name: 'Emma R.', meta: '9:00 AM · G2 Prep', badge: 'Confirmed', bc: 'badge-blue' },
-                  { bg: 'linear-gradient(135deg,#7C3AED,#5B21B6)', name: 'Liam T.', meta: '11:30 AM · G1 Beginner', badge: 'Confirmed', bc: 'badge-blue' },
-                  { bg: 'linear-gradient(135deg,#16A34A,#15803D)', name: 'Aisha K.', meta: '2:00 PM · Highway', badge: 'Confirmed', bc: 'badge-blue' },
-                ].map(i => (
-                  <div key={i.name} className="instr-card">
-                    <div className="instr-av" style={{ background: i.bg }} />
-                    <div style={{ flex: 1 }}><div className="instr-name">{i.name}</div><div className="instr-meta">{i.meta}</div></div>
-                    <div className={`badge ${i.bc}`}>{i.badge}</div>
-                  </div>
-                ))}
-                <div className="ps-cta">View Lesson Notes →</div>
-              </div>
-            </div>
+
+          <h1 className="hero-headline-new hero-animate" style={{ animationDelay: '0.25s' }}>
+            Stay focused on driving.<br />
+            <em className="hero-serif">We&apos;ll handle the rest.</em>
+          </h1>
+
+          <p className="hero-subtext-new hero-animate" style={{ animationDelay: '0.4s' }}>
+            Book lessons, manage schedules, and learn with confidence through a platform built for Ontario drivers.
+          </p>
+
+          <p className="hero-support-new hero-animate" style={{ animationDelay: '0.52s' }}>
+            Built for verified Ontario instructors and learners across Ontario.
+          </p>
+
+          <div className="hero-split hero-animate" style={{ animationDelay: '0.68s' }}>
+            <a href="https://forms.gle/KfJgBKYz3DDKvSNE9" target="_blank" rel="noopener noreferrer" className="hero-split-card">
+              <div className="hero-split-title">I&apos;m a Learner</div>
+              <div className="hero-split-desc">Find instructors and book lessons</div>
+              <div className="hero-split-arrow">Get started →</div>
+            </a>
+            <a href="https://forms.gle/KfJgBKYz3DDKvSNE9" target="_blank" rel="noopener noreferrer" className="hero-split-card hero-split-card-primary">
+              <div className="hero-split-title">I&apos;m an Instructor</div>
+              <div className="hero-split-desc">Get students and manage your schedule</div>
+              <div className="hero-split-arrow">Join waitlist →</div>
+            </a>
           </div>
         </div>
       </section>
