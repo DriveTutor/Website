@@ -131,16 +131,13 @@ export default function Home() {
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 20, marginBottom: 48 }}>
             {[
-              { step: '1', ico: '🎯', title: 'Get matched with learners', desc: 'Learners request lessons based on your location and availability.' },
-              { step: '2', ico: '📅', title: 'Accept and schedule', desc: 'Approve learners and schedule lessons using your built-in planner.' },
-              { step: '3', ico: '📋', title: 'Manage everything in one place', desc: 'Track lesson notes, progress, and schedules without manual work.' },
-              { step: '4', ico: '📊', title: 'Stay organized and in control', desc: 'View your daily, weekly, and monthly schedule at a glance.' },
+              { step: '1', title: 'Get matched with learners', desc: 'Learners request lessons based on your location and availability.' },
+              { step: '2', title: 'Accept and schedule', desc: 'Approve learners and schedule lessons using your built-in planner.' },
+              { step: '3', title: 'Manage everything in one place', desc: 'Track lesson notes, progress, and schedules without manual work.' },
+              { step: '4', title: 'Stay organized and in control', desc: 'View your daily, weekly, and monthly schedule at a glance.' },
             ].map(s => (
               <div key={s.step} className="feat-card">
-                <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 16 }}>
-                  <div style={{ width: 26, height: 26, borderRadius: '50%', background: '#054ADA', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 12, fontWeight: 800, flexShrink: 0 }}>{s.step}</div>
-                  <div className="feat-icon" style={{ margin: 0 }}>{s.ico}</div>
-                </div>
+                <div className="hiw-step-label">Step {s.step}</div>
                 <div className="feat-title">{s.title}</div>
                 <div className="feat-desc">{s.desc}</div>
               </div>
