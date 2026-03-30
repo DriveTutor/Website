@@ -199,7 +199,7 @@ export default function Home() {
           </div>
           <div className="about-cards">
             {[
-              { ico: '🎯', title: 'For Learners', desc: 'Browse verified instructors, check availability, book in minutes. Track your journey from G1 to G all in one place.' },
+              { ico: '🎯', title: 'For Learners', desc: 'Browse verified instructors, check availability, and book in minutes. Track your full journey from G1 to G.' },
               { ico: '🏫', title: 'For Instructors', desc: 'Manage your schedule, student roster, and incoming bookings — without the overhead of admin work.' },
               { ico: '✅', title: 'Verified & Trusted', desc: 'All instructors undergo background checks and credential verification before they can accept bookings.' },
             ].map(c => (

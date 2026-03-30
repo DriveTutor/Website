@@ -3,11 +3,11 @@ import '../styles/globals.css'
 
 export const metadata: Metadata = {
   title: 'Drive Tutor — Ontario\'s Driving Lesson Platform',
-  description: 'Drive Tutor connects learner drivers with verified instructors in Ontario. Simple booking, trusted profiles, and a seamless experience.',
+  description: "Ontario's driving lesson platform for learners and instructors. Book lessons, manage schedules, and stay organized with confidence.",
   keywords: 'driving lessons, Ontario, G1, G2, driving instructor, book driving lesson',
   openGraph: {
     title: 'Drive Tutor — Book Driving Lessons with Confidence',
-    description: 'Connect with verified driving instructors across Ontario.',
+    description: "Ontario's driving lesson platform for learners and instructors. Book lessons, manage schedules, and stay organized with confidence.",
     type: 'website',
   },
 }
