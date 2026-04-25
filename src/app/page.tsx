@@ -26,7 +26,7 @@ const screenshots = [
   { bg: 'linear-gradient(145deg,#EFF6FF,#DBEAFE)', src: '/screenshots/Ins_dash.png',  alt: 'Instructor Dashboard' },
   { bg: 'linear-gradient(145deg,#F0FDF4,#DCFCE7)', src: '/screenshots/Sch_view1.png', alt: 'Schedule View 1' },
   { bg: 'linear-gradient(145deg,#FFF7ED,#FED7AA)', src: '/screenshots/Sch_view2.png', alt: 'Schedule View 2' },
-  { bg: 'linear-gradient(145deg,#F5F3FF,#EDE9FE)', src: '/screenshots/Learn_man.png', alt: 'Learner Management' },
+  { bg: 'linear-gradient(145deg,#F5F3FF,#EDE9FE)', src: '/screenshots/Learn_Man.png', alt: 'Learner Management' },
   { bg: 'linear-gradient(145deg,#FFF1F2,#FFE4E6)', src: '/screenshots/Pend_req.png',  alt: 'Pending Requests' },
 ]
 const legalCards = [
