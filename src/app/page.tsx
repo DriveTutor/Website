@@ -23,9 +23,11 @@ const features = [
   { ico: '🔒', title: 'Secure & Private', desc: 'Your data is protected. Personal information is handled with care.' },
 ]
 const screenshots = [
-  { bg: 'linear-gradient(145deg,#EFF6FF,#DBEAFE)', src: '', alt: 'Instructor Dashboard' },
-  { bg: 'linear-gradient(145deg,#F0FDF4,#DCFCE7)', src: '', alt: 'Schedule View' },
-  { bg: 'linear-gradient(145deg,#FFF7ED,#FED7AA)', src: '', alt: 'Learner Management' },
+  { bg: 'linear-gradient(145deg,#EFF6FF,#DBEAFE)', src: '/screenshots/Ins_dash.png',  alt: 'Instructor Dashboard' },
+  { bg: 'linear-gradient(145deg,#F0FDF4,#DCFCE7)', src: '/screenshots/Sch_view1.png', alt: 'Schedule View 1' },
+  { bg: 'linear-gradient(145deg,#FFF7ED,#FED7AA)', src: '/screenshots/Sch_view2.png', alt: 'Schedule View 2' },
+  { bg: 'linear-gradient(145deg,#F5F3FF,#EDE9FE)', src: '/screenshots/Learn_man.png', alt: 'Learner Management' },
+  { bg: 'linear-gradient(145deg,#FFF1F2,#FFE4E6)', src: '/screenshots/Pend_req.png',  alt: 'Pending Requests' },
 ]
 const legalCards = [
   { ico: '🔐', title: 'Privacy Policy', desc: 'How we collect, use, and protect your personal data.', href: '/privacy-policy' },
